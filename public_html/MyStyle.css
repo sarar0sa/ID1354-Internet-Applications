@@ -27,7 +27,7 @@ h4{
 }
 
 p {
-    font-family: "American typewriter", serif;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     color: black;
     text-align: center;
 }
@@ -75,7 +75,7 @@ hr{
     display: inline-block;
 }
 
-li .dropbtn{
+li.dropbtn{
     display: inline-block;
     text-align: center;
     padding: 14px 16px;
@@ -144,7 +144,7 @@ li a:hover {
 }
 
 .date{
-  font-family: "American Typewriter", serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   background-color: #dddddd;
   font-size: 12px;
   float: left;
@@ -221,7 +221,7 @@ li a:hover {
 .recipe li{
     padding-top:  5px;
     padding-bottom: 10px;
-    font-family:"American Typewriter", serif;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 
 }
 
@@ -240,8 +240,8 @@ li a:hover {
 }
 
 .Food-header p {
-    font-family: "American Typewriter", serif;
-    font-size: 15px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 18px;
     font-style: italic;
     padding: 25px;
 }
@@ -252,19 +252,19 @@ li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 40px;
-    font-family: "American Typewriter", serif;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     color: white;   
 }
 
 .comments p{
-    font-family: "American Typewriter", serif;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 15px;
     text-align: left;
     padding-left: 20px;
 }
 
 .comments h5{
-    font-family:"American Typewriter", serif;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 15px;
     text-align: left;
     padding-left: 20px;
@@ -273,7 +273,7 @@ li a:hover {
 }
 
 .comments h4{
-    font-family:"American Typewriter", serif;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 20px;
     text-align: left;
     padding-left: 20px;
