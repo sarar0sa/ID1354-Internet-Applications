@@ -6,7 +6,6 @@ and open the template in the editor.
 -->
 <?php
 include 'header.php';
-session_start();
 ?>
 
 <html lang="en-US">

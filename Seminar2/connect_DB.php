@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
   DEFINE('DB_USERNAME', 'root');
   DEFINE('DB_PASSWORD', 'root');
   DEFINE('DB_HOST', 'localhost'); 

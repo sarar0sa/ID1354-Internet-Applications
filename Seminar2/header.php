@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php
+<?php 
 session_start();
 ?>
 
@@ -27,8 +27,8 @@ session_start();
                     <a href="Pancakes.php">Pancakes</a>
                 </div>
             </li>
-            <?php if(isset($_POST['id'])){ ?>
-            <li><a href="LoginFolder.php"> Log out </a></li>
+            <?php if(isset($_SESSION['id'])){ ?>
+            <li><a href="logout.php"> Log out </a></li>
             <?php } else { ?>
             <li><a href="LoginFolder.php"> Log in </a></li>
             <?php } ?>

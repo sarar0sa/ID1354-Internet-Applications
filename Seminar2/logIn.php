@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 include 'connect_DB.php';
 
  
@@ -12,7 +12,8 @@ include 'connect_DB.php';
  
  
  if(mysqli_num_rows($result) > 0){
-     $_SESSION['id'] = $row['user_id'];
+     session_start();
+     $_SESSION['id'] = $username;
     header("Location: loginSuccess.php");
     exit();
  }
@@ -20,7 +21,7 @@ include 'connect_DB.php';
  else {
      echo 'Invalid user';
 }
-?>
+
 
 
 
