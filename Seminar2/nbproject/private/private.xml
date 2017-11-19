@@ -5,10 +5,10 @@
         <group>
             <file>file:/Applications/MAMP/htdocs/Seminar2/MyStyle.css</file>
             <file>file:/Applications/MAMP/htdocs/Seminar2/Meatballs.php</file>
-            <file>file:/Applications/MAMP/htdocs/Seminar2/loginSuccess.php</file>
-            <file>file:/Applications/MAMP/htdocs/Seminar2/index.php</file>
-            <file>file:/Applications/MAMP/htdocs/Seminar2/logIn.php</file>
-            <file>file:/Applications/MAMP/htdocs/Seminar2/LoginFolder.php</file>
+            <file>file:/Applications/MAMP/htdocs/Seminar2/comments.php</file>
+            <file>file:/Applications/MAMP/htdocs/Seminar2/Pancakes.php</file>
+            <file>file:/Applications/MAMP/htdocs/Seminar2/handle_comments.php</file>
+            <file>file:/Applications/MAMP/htdocs/Seminar2/header.php</file>
         </group>
     </open-files>
 </project-private>

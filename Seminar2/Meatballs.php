@@ -1,11 +1,13 @@
-<!DOCTYPE html>
 <?php
-include 'header.php';
+include_once 'header.php';
+$_SESSION['recipe'] = 'meatballs';
 ?>
-
+<!DOCTYPE html>
 <html lang="en-US">
     <head>
         <title>Meatballs</title>
+    </head>
+    <body>
         <div class="Food-image">
         <img src="pictures/swedishmeatball.jpg" alt="Plate of meatballs">
         </div>
@@ -67,18 +69,8 @@ include 'header.php';
             </ol>
         </div>
         <br>
-        <hr>
-        <div class='comments'>
-        <h4>Comments</h4>
-        <hr>
-        <h5>Sara</h5>
-        <p>6/11/2017 18:34</p>
-        <p>Good recipe!</p><br>
-        <h5>Anna</h5> 
-        <p>7/11/2017 11:04</p>
-        <p>Yummie!</p>
-        <br>
-        </div>
+        <?php
+        include_once 'comments_meatballs.php'; ?>
     </body>
 </html>
 

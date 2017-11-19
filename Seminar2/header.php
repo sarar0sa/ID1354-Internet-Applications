@@ -2,7 +2,6 @@
 <?php 
 session_start();
 ?>
-
 <html lang="en-US">
     <head>
         <title>Header</title>
