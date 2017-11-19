@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <?php
-include 'header.php';
+include_once 'header.php';
 session_start();
 ?>
 <head>
-    <body>
+    <title>Login Form </title>
+    </head>
+    <body> 
         <form action="login.php" method="POST">
             <div class="container">
                 <p> Enter username and password to log in </p>
@@ -19,6 +21,5 @@ session_start();
             </div>
         </form>
     </body>
-</head>
 </html>
 

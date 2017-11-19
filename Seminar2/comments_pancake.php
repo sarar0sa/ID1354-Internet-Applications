@@ -19,6 +19,9 @@
                 <br><br>
                 <button type="submit" name='submit'>Add comment</button>  
             </div>
+        <?php }  else{ ?>
+            <br>
+            <p>Log in to write a comment</p>
         <?php } ?>
         </form>
         <br>

@@ -16,7 +16,7 @@ include 'connect_DB.php';
  }
  
  else {
-     echo 'Invalid user';
+       echo 'Wrong password or username, try again';
 }
 
 
