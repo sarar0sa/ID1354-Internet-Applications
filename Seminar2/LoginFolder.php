@@ -16,10 +16,16 @@ session_start();
                 <br>
                 <label> Password </label>
                 <input type="password" placeholder="Enter password" name="password" required>
-                <br> <br>
-                <button type="submit">Login</button>
-            </div>
-        </form>
+                <br><br>
+                <button type="submit" name="login">Login</button>
+                </div>
+                </form>
+                <form action="registerMemb.php" method="POST">
+                <div class="container">
+                <button type="submit" name="register">Register new member</button>
+                <br><br>
+                </div>
+                </form>
     </body>
 </html>
 
