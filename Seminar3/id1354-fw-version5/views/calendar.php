@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-
 <?php
 include 'header.php';
-session_start();
 ?>
-
 <html lang="en-US">
     <head>
         <title>Calendar Page</title>
@@ -25,8 +22,8 @@ session_start();
         <div class="date"></div>
         
         <div class="date">1
-            <a href="Pancakes.php" id="link-pancakes"> 
-                <img class="recipe-image" src="../resources/img/pancakes-2801960_640.jpg" alt="Picture of pancakes">
+            <a href="ShowPancakes" id="link-pancakes"> 
+                <img class="recipe-image" src="/Seminar3/id1354-fw-version5/resources/img/pancakes-2801960_640.jpg" alt="Picture of pancakes">
             </a>
         </div>
         <div class="date">2</div>
@@ -45,8 +42,8 @@ session_start();
        
        
         <div class="date">11
-            <a href="Meatballs.php" id="link-meatballs">
-        <img class="recipe-image" src="../resources/img/swedishmeatball.jpg" alt="Picture of meatballs">
+            <a href="ShowMeatballs" id="link-meatballs">
+        <img class="recipe-image" src="/Seminar3/id1354-fw-version5/resources/img/swedishmeatball.jpg" alt="Picture of meatballs">
             </a>
         </div>
         <div class="date">12</div>

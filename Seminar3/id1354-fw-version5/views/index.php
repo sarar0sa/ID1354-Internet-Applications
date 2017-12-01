@@ -17,7 +17,7 @@ include 'header.php';
             you plan your meals during the week. Check out the recipe of the day 
             by clicking below!    
         </p> 
-        <a href="/Seminar3/id1354-fw-version5/views/calendar.php">
+        <a href="ShowCalendar">
             <img id="index-page" src="/Seminar3/id1354-fw-version5/resources/img/cook-366875_1280.jpg" alt="Plates with diffrent food">
         <div class="link-text">Recipe of the day</div>
         </a>

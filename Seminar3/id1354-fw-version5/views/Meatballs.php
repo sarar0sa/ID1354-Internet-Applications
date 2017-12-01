@@ -9,7 +9,7 @@ $_SESSION['recipe'] = 'meatballs';
     </head>
     <body>
         <div class="Food-image">
-        <img src="../resources/img/swedishmeatball.jpg" alt="Plate of meatballs">
+        <img src="../../resources/img/swedishmeatball.jpg" alt="Plate of meatballs">
         </div>
         <div class="Food-header">
             <h2> Swedish Meatballs </h2>

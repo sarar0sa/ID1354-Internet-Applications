@@ -13,23 +13,23 @@ session_start();
     </head>
     <body>
         <div class ="header">
-            <a href="/Seminar3/id1354-fw-version5/views/index.php">Tasty Recipes</a>
+            <a href="FirstPage">Tasty Recipes</a>
         </div>
         <div class="navbar">
         <ul>
             <li><a href="FirstPage">Home</a></li>
-            <li><a href="/Seminar3/id1354-fw-version5/views/calendar.php">Calendar</a></li>
+            <li><a href="ShowCalendar">Calendar</a></li>
             <li class ="dropdown">
                 <a href="#" class="dropbtn">Recipes</a>
                 <div class="dropdown-content">
-                    <a href="/Seminar3/id1354-fw-version5/views/Meatballs.php">Meatballs</a>
-                    <a href="/Seminar3/id1354-fw-version5/views/Pancakes.php">Pancakes</a>
+                    <a href="ShowMeatballs">Meatballs</a>
+                    <a href="ShowPancakes">Pancakes</a>
                 </div>
             </li>
             <?php if(isset($_SESSION['id'])){ ?>
             <li><a href="logout.php"> Log out </a></li>
             <?php } else { ?>
-            <li><a href="/Seminar3/id1354-fw-version5/views/LoginFolder.php"> Log in </a></li>
+            <li><a href="ShowLogin"> Log in </a></li>
             <?php } ?>
         </ul>
         </div>

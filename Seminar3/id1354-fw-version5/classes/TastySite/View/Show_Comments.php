@@ -17,7 +17,7 @@ class Show_Comments extends AbstractRequestHandler {
     }
     protected function doExecute(): string {
         $this->addVariable('theComments', $this->theComments);
-        return 'subfolder/view-data';
+        return 'views/comments_pancake';
     }
 
 }

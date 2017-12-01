@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <?php
-include_once 'header.php';
-session_start();
+include 'header.php';
 ?>
 <head>
     <title>Login Form </title>
