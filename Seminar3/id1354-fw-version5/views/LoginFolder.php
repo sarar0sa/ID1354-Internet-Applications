@@ -6,7 +6,7 @@ include 'header.php';
     <title>Login Form </title>
     </head>
     <body> 
-        <form action="login.php" method="POST">
+        <form action="Login" method="POST">
             <div class="container">
                 <p> Enter username and password to log in </p>
                 <label>Username</label>
