@@ -11,7 +11,7 @@ namespace TastySite\Integration;
          $DB_HOST = 'localhost';
          $DB_DATABASE = 'login_tasty';
          
-         $this->conn = new mysqli($DB_HOST, $DB_USERNAME, $DB_PASSWORD, $DB_DATABASE);
+         $this->conn = mysqli_connect($DB_HOST, $DB_USERNAME, $DB_PASSWORD, $DB_DATABASE);
          
            if (mysqli_connect_error()) {
            die('Connect Error ('.mysqli_connect_errno().') '.mysqli_connect_error());
@@ -23,4 +23,5 @@ namespace TastySite\Integration;
          $result = mysqli_query($this->conn, $query);
          return $result;
      }
+     
  }

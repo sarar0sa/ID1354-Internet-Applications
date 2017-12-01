@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php 
+use TastySite\Util\Constants 
+?>
 <html lang="en-US">
     <head>
         <title>Header</title>
@@ -23,8 +26,8 @@
                     <a href="ShowPancakes">Pancakes</a>
                 </div>
             </li>
-            <?php if(isset($_SESSION['id'])){ ?>
-            <li><a href="logout.php"> Log out </a></li>
+            <?php if ($this->session->get(Constants::LOGGED_IN_USER) != null) { ?>
+            <li><a href="Logout"> Log out </a></li>
             <?php } else { ?>
             <li><a href="ShowLogin"> Log in </a></li>
             <?php } ?>

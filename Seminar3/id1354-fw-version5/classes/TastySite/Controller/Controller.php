@@ -13,7 +13,6 @@ class Controller {
     private $login;
     
     public function login($username, $password){
-        echo 'in controller';
         $this->login = new LoginUser();
         return $this->login->checkLogin($username, $password);
     }
