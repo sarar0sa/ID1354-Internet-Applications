@@ -24,4 +24,9 @@ namespace TastySite\Integration;
          return $result;
      }
      
+     public function registerUser($username, $password){
+         $query = "INSERT INTO users (username,password) VALUES ('$username','$password')";
+         $result = mysqli_query($this->conn, $query);
+         return $result;
+     }
  }

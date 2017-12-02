@@ -8,7 +8,7 @@ use TastySite\Integration\DB_Handler;
  *
  * @author sararosander
  */
-class LoginUser {
+class User {
     private $user;
             
     public function __construct() {
@@ -23,5 +23,13 @@ class LoginUser {
             else{
                 return false;
             }
+        }
+        
+        public function checkRegister($username, $password){
+            $result = $this->user->registerUser($username, $password);
+            if($result){
+                return true;
+            }
+            return false;
         }
     }

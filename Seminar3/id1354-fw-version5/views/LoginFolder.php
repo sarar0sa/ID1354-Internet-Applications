@@ -16,12 +16,12 @@ include 'header.php';
                 <label> Password </label>
                 <input type="password" placeholder="Enter password" name="password" required>
                 <br><br>
-                <button type="submit" name="login">Login</button>
+                <button type="submit">Login</button>
                 </div>
                 </form>
-                <form action="registerMemb.php" method="POST">
+                <form action="ShowRegister">
                 <div class="container">
-                <button type="submit" name="register">Register new member</button>
+                <button type="submit">Register new member</button>
                 <br><br>
                 </div>
                 </form>

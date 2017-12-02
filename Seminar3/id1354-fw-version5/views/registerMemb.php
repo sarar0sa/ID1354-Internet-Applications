@@ -7,7 +7,7 @@ include_once 'header.php';?>
         <title>Registrer</title>
     </head>
     <body>
-        <form action="register.php" method="POST">
+        <form action="Register" method="POST">
             <div class="container">
                 <p> Enter a password and an username to register a new member </p>
                 <label>Username</label>
@@ -17,7 +17,7 @@ include_once 'header.php';?>
                 <label> Password </label>
                 <input type="password" placeholder="Enter password" name="password" required>
                 <br><br>
-                <button type="submit" name="register">Register</button>
+                <button type="submit">Register</button>
                 </div>
                 </form>
     </body>

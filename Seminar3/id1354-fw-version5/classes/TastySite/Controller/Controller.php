@@ -2,7 +2,7 @@
 
 namespace TastySite\Controller;
 
-use TastySite\Model\LoginUser;
+use TastySite\Model\User;
 
 /**
  * All calls to Model passes through here
@@ -10,11 +10,16 @@ use TastySite\Model\LoginUser;
  * @author sararosander
  */
 class Controller {
-    private $login;
+    private $user;
     
     public function login($username, $password){
-        $this->login = new LoginUser();
-        return $this->login->checkLogin($username, $password);
+        $this->user = new User();
+        return $this->user->checkLogin($username, $password);
+    }
+    
+    public function register($username, $password){
+        $this->user = new User();
+        return $this->user->checkRegister($username, $password);
     }
     
 }

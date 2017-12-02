@@ -21,9 +21,6 @@ class Login extends AbstractRequestHandler {
          $this->password = $password;
     }
     
-    public function setLogin(){
-    }
-
     protected function doExecute() {
         $controller = $this->session->get(Constants::CONTR_KEY_NAME);
         $checkingLogin = $controller->login($this->username, $this->password);
