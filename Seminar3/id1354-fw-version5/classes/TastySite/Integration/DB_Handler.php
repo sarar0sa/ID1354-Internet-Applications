@@ -29,4 +29,10 @@ namespace TastySite\Integration;
          $result = mysqli_query($this->conn, $query);
          return $result;
      }
+     
+     public function insertComment($username, $recipe, $comment){
+         $query = "INSERT INTO comments (recipe, user, comment) VALUES ('$recipe','$username','$comment')";
+         $result = mysqli_query($this->conn, $query);
+         return $result;
+     }
  }

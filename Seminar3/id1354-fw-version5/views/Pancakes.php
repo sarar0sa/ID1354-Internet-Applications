@@ -1,6 +1,7 @@
 <?php
 include_once 'header.php';
-$_SESSION['recipe'] = 'pancakes';
+use TastySite\Util\Constants;
+$this->session->set(Constants::RECIPE, 'Pancakes');
 ?>
 <!DOCTYPE html>
 <html lang="en-US">
@@ -70,6 +71,6 @@ $_SESSION['recipe'] = 'pancakes';
         </div>
        <br>
         <?php   
-        include_once 'comments_pancake.php'; ?>
+        include_once 'comments_recipe.php'; ?>
     </body>
 </html>

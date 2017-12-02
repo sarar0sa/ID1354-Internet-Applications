@@ -23,6 +23,8 @@ class Login extends AbstractRequestHandler {
     
     protected function doExecute() {
         $controller = $this->session->get(Constants::CONTR_KEY_NAME);
+        $this->session->set(Constants::CONTR_KEY_NAME, $controller);
+        
         $checkingLogin = $controller->login($this->username, $this->password);
         if($checkingLogin){
             $this->session->set(Constants::CONTR_KEY_NAME, $controller);
@@ -30,7 +32,7 @@ class Login extends AbstractRequestHandler {
             return 'loginSuccess';
         }
         else{
-            return 'LoginFolder';
+            echo 'Invalid password or username, try again';
         }
     }
 

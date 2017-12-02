@@ -25,7 +25,7 @@ class Register extends AbstractRequestHandler {
         if($checkingRegister){
             return 'registerSuccess';
         }
-        return 'registerMemb';
+        echo 'Something went wrong, try again';
         
     }
 

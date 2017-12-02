@@ -1,4 +1,5 @@
 <?php
+
 namespace TastySite\Util;
 
 /**
@@ -8,5 +9,6 @@ namespace TastySite\Util;
  */
 class Constants {
     const CONTR_KEY_NAME = 'controller';
-    const LOGGED_IN_USER = ' ';
+    const LOGGED_IN_USER = 'username';
+    const RECIPE = 'recipe';
 }
