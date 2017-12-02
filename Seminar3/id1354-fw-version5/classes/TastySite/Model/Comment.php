@@ -21,4 +21,15 @@ class Comment {
         }
         return false;
     }
+    
+    public function getComments($recipe){
+        $result = $this->comment->getAllComments($recipe);
+        $comments = array();
+        if(mysqli_num_rows($result) > 0){
+            while($row = mysqli_fetch_assoc($result)){
+               $comments[] = $row;
+            }
+        }
+          return $comments;
+    }
 }

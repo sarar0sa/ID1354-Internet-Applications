@@ -27,5 +27,9 @@ class Controller {
         $this->comment = new Comment();
         return $this->comment->addComment($username, $recipe, $comment);
     }
+    public function readComments($recipe){
+        $this->comment = new Comment();
+        return $this->comment->getComments($recipe);
+    }
     
 }

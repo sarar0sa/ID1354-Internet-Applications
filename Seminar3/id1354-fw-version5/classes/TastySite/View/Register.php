@@ -21,6 +21,7 @@ class Register extends AbstractRequestHandler {
     }
     protected function doExecute(){
         $controller = $this->session->get(Constants::CONTR_KEY_NAME);
+        $this->session->set(Constants::CONTR_KEY_NAME);
         $checkingRegister = $controller->register($this->username, $this->password);
         if($checkingRegister){
             return 'registerSuccess';

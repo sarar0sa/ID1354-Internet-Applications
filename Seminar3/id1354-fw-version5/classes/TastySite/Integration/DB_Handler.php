@@ -35,4 +35,11 @@ namespace TastySite\Integration;
          $result = mysqli_query($this->conn, $query);
          return $result;
      }
+     
+     public function getAllComments($recipe){
+       $query = "SELECT * FROM comments WHERE recipe ='$recipe'";
+       $result = mysqli_query($this->conn, $query);
+       return $result;
+     }
+
  }
