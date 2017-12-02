@@ -1,7 +1,6 @@
 <?php
 include 'header.php';
 ?>
-
 <html lang="en-US">
     <head>
         <title>Index Page</title>
