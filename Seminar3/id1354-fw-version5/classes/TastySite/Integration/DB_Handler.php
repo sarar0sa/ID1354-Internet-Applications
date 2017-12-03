@@ -10,6 +10,8 @@ namespace TastySite\Integration;
          $DB_PASSWORD = 'root';
          $DB_HOST = 'localhost';
          $DB_DATABASE = 'login_tasty';
+        
+        ///include '/Applications/MAMP/htdocs/DB_connect';
   
          $this->conn = mysqli_connect($DB_HOST, $DB_USERNAME, $DB_PASSWORD, $DB_DATABASE);
          
