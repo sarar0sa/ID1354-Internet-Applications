@@ -15,7 +15,7 @@ class HandleComments extends AbstractRequestHandler {
     private $comment;
     
     public function setComment($comment){
-        $this->comment = $comment; 
+        $this->comment = htmlentities($comment, ENT_QUOTES);
     }
 
     protected function doExecute() {
@@ -24,21 +24,20 @@ class HandleComments extends AbstractRequestHandler {
          
          $user = $this->session->get(Constants::LOGGED_IN_USER);
          $recipe = $this->session->get(Constants::RECIPE);
-        
          
+       
         $checkComments = $controller->postComment($user, $recipe, $this->comment);
         $getComments = $controller->readComments($recipe);
-        
+          
         $this->addVariable('theComments', $getComments);
                
-        
         if($checkComments){
             return $recipe;
         }
         else {
             echo 'Something went wrong, please try again';
-        }
-        
+        }    
+    
     }
-
 }
+

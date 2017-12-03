@@ -16,20 +16,30 @@ class User {
     }
     
     public function checkLogin($username, $password){
-        $result = $this->user->loginUser($username, $password);
-        if(mysqli_num_rows($result) > 0){
-            return true;
+        $result = $this->user->loginUser($username);
+        if(mysqli_num_rows($result) < 1) {
+            return false;
             }
             else{
-                return false;
+                while($row = mysqli_fetch_assoc($result)){
+                    if (password_verify($password, $row['password'])) {
+                        return true;
+                }
+           
+                else {
+                    return false;
+                }
             }
         }
+    }
         
         public function checkRegister($username, $password){
             $result = $this->user->registerUser($username, $password);
             if($result){
                 return true;
             }
-            return false;
+            else{
+                return false;
         }
     }
+}

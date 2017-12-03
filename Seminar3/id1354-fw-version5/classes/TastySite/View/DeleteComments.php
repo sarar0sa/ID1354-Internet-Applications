@@ -13,11 +13,11 @@ class DeleteComments extends AbstractRequestHandler {
     private $comment_id, $comment_name;
     
     public function setComment_id($comment_id){
-        $this->comment_id = $comment_id;
+        $this->comment_id = htmlentities($comment_id, ENT_QUOTES);
     }
     
     public function setComment_name($comment_name){
-        $this->comment_name = $comment_name;
+        $this->comment_name = htmlentities($comment_name, ENT_QUOTES);;
     }
     
 

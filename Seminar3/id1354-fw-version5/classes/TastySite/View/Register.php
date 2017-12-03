@@ -13,16 +13,17 @@ class Register extends AbstractRequestHandler {
     private $username, $password;
     
     public function setUsername($username){
-        $this->username = $username;
+        $this->username = htmlentities($username, ENT_QUOTES);
     }
     
     public function setPassword($password){
-         $this->password = $password;
+         $this->password = htmlentities($password, ENT_QUOTES);
     }
+    
     protected function doExecute(){
         $controller = $this->session->get(Constants::CONTR_KEY_NAME);
-        $this->session->set(Constants::CONTR_KEY_NAME);
         $checkingRegister = $controller->register($this->username, $this->password);
+       
         if($checkingRegister){
             return 'registerSuccess';
         }
