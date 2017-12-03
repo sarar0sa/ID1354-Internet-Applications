@@ -41,5 +41,16 @@ namespace TastySite\Integration;
        $result = mysqli_query($this->conn, $query);
        return $result;
      }
+     
+     public function deleteComment($comment_id, $comment_user, $comment_recipe, $loggedInUser){
+         if($comment_user == $loggedInUser){
+             $query = "DELETE FROM comments WHERE id = '$comment_id' AND user = '$comment_user' AND recipe ='$comment_recipe'";
+             $result = mysqli_query($this->conn, $query);
+             return $result;
+         }
+         else {
+             return false;
+         }
+     }
 
  }

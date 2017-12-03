@@ -28,10 +28,8 @@ class HandleComments extends AbstractRequestHandler {
          
         $checkComments = $controller->postComment($user, $recipe, $this->comment);
         $getComments = $controller->readComments($recipe);
-        $getAuthors = $controller->readUsers($recipe);
         
         $this->addVariable('theComments', $getComments);
-        $this->addVariable('theAuthors', $getAuthors);
                
         
         if($checkComments){

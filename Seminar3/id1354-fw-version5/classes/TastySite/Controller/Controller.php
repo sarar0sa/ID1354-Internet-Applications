@@ -27,9 +27,14 @@ class Controller {
         $this->comment = new Comment();
         return $this->comment->addComment($username, $recipe, $comment);
     }
+    
     public function readComments($recipe){
         $this->comment = new Comment();
         return $this->comment->getComments($recipe);
     }
     
+    public function deleteComment($comment_id, $comment_user, $comment_recipe, $loggedInUser){
+        $this->comment = new Comment();
+        return $this->comment->deleteComment($comment_id, $comment_user, $comment_recipe, $loggedInUser);
+    }  
 }

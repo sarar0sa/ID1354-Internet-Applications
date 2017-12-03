@@ -34,14 +34,12 @@ use TastySite\Util\Constants;
                 echo '<br>';
                 echo '<h3>'.$comment['user'].'</h3>';
                 echo '<p>'.$comment['comment'].'</p>';
-                $recID = $row['id'];
                 if($this->session->get(Constants::LOGGED_IN_USER) == $comment['user']) { ?>
                     <div class="commentDelete">
-                    <form action="handle_comments.php" method="POST">
-                    <?php //echo "<input type='hidden' name='comment_id' value='".$row['id']."'/>";?>
-                    <?php //echo "<input type='hidden' name='comment_name' value='".$row['user']."'/>";?> 
-                    <input type="hidden" name="recipe" value="Meatballs">
-                    <button type="submit" name ='delete'> Delete comment</button>
+                    <form action="DeleteComments" method="POST">
+                    <?php echo "<input type='hidden' name='comment_id' value='".$comment['id']."'/>";?>
+                    <?php echo "<input type='hidden' name='comment_name' value='".$comment['user']."'/>";?> 
+                    <button type="submit"> Delete comment</button>
                     <br>
                     </form>
                     </div>

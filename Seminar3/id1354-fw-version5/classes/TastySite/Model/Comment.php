@@ -19,7 +19,9 @@ class Comment {
         if($result){
             return true;
         }
+        else {
         return false;
+        }
     }
     
     public function getComments($recipe){
@@ -31,5 +33,10 @@ class Comment {
             }
         }
           return $comments;
+    }
+    
+    public function deleteComment($comment_id, $comment_user, $comment_recipe, $loggedInUser){
+        $result = $this->comment->deleteComment($comment_id, $comment_user, $comment_recipe, $loggedInUser);
+        return $result;
     }
 }
