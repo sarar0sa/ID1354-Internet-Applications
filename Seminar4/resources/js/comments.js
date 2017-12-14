@@ -11,7 +11,6 @@ $(document).ready(function(){
             reloadComments();
             $("#comment").val('');
             submit = 0;
-            reloadComments();
              
         });
         console.log(comment + submit);
@@ -19,7 +18,8 @@ $(document).ready(function(){
         //alert(comment);
     });
     
-    $('button#delete').click(function (){
+    $("body").on("click", "button#delete", function (){
+        console.log("delete");
         var commentId = $("#comment_id").val();
         var user = $("#comment_name").val();
         //var recipe = $("#recipe").val();
@@ -30,6 +30,7 @@ $(document).ready(function(){
             //recipe: recipe,
             deleteEntry: deleteEntry    
         }, function(){
+            reloadComments();
             deleteEntry = 0;
         });
         console.log(commentId + user + deleteEntry);
@@ -44,6 +45,7 @@ $(document).ready(function(){
        }, 
        function(data){
            $(".comment-box").html(data);
+           display = 0;
        });
     }
 
