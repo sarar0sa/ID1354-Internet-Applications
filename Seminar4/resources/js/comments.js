@@ -2,7 +2,12 @@ $(document).ready(function(){
     
     $('button#submit').click(function (){
         var comment = $("#comment").val();
-        var submit = 1;
+        if(comment === ''){
+           alert("You need to enter a comment");
+           return;
+        }
+        else{
+        var submit = true;
         $.post("handle_comments.php", {
             comment: comment,
             submit: submit
@@ -10,43 +15,50 @@ $(document).ready(function(){
         }, function(){
             reloadComments();
             $("#comment").val('');
-            submit = 0;
+            submit = false;
              
         });
-        console.log(comment + submit);
- 
-        //alert(comment);
+    }
+     
     });
     
-    $("body").on("click", "button#delete", function (){
-        console.log("delete");
+   /* $("body").on("click",("button#delete"), function (){
         var commentId = $("#comment_id").val();
         var user = $("#comment_name").val();
-        //var recipe = $("#recipe").val();
-        var deleteEntry = 1;
+        var deleteEntry = true;
         $.post("handle_comments.php", {
             commentId: commentId,
             user: user,
-            //recipe: recipe,
             deleteEntry: deleteEntry    
         }, function(){
             reloadComments();
-            deleteEntry = 0;
+            deleteEntry = false;
         });
-        console.log(commentId + user + deleteEntry);
-    });
+
+    });*/
     
 });
 
     function reloadComments() {
-        var display = 1;
+        var display = true;
        $.post("handle_comments.php", {
            display: display
        }, 
        function(data){
            $(".comment-box").html(data);
-           display = 0;
+           display = false;
        });
     }
-
+ 
+    function remove(commentId){
+        var deleteEntry = true;
+       $.post("handle_comments.php", {
+            commentId: commentId,
+            deleteEntry: deleteEntry    
+        }, function(){
+            reloadComments();
+            deleteEntry = false;
+        });
+    
+}
    
